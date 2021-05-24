@@ -22,9 +22,9 @@ class BookDataService
         return http.delete(`/book/${id}`);
     }
 
-    deleteAll() {
-        return http.delete(`/book`);
-    }
+    // deleteAll() {
+    //     return http.delete(`/book`);
+    // }
 
 }
 export default new BookDataService();

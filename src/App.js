@@ -29,6 +29,8 @@ import Fade from "@material-ui/core/Fade";
 import BookListComponent from "./component/BookListCompoent";
 import MailIcon from "@material-ui/icons/Mail";
 import InputBase from "@material-ui/core/InputBase";
+import CustomerListComponent from "./component/CustomerListComponent";
+import mePic from './assets/img/avatar/mine.jpg'
 
 const drawerWidth = 240;
 
@@ -242,7 +244,7 @@ export default function App() {
                 >
                   <Avatar
                     alt='Remy Sharp'
-                    src='/static/images/avatar/1.jpg'
+                    src={mePic}
                     className={classes.small}
                   />
                 </IconButton>
@@ -310,6 +312,7 @@ export default function App() {
                           exact
                           component={BookListComponent}
                         />
+                        <Route path='/customerList' exact component={CustomerListComponent}/>
                         <Route path='/chart' exact component={Chart} />
                       </Switch>
                     </Paper>

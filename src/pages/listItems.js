@@ -30,7 +30,6 @@ export const mainListItems = (
         <ShoppingCartIcon />
       </ListItemIcon>
       <Link
-        className='forLink'
         to='/book'
         style={{ textDecoration: "none", color: "black" }}
       >
@@ -42,13 +41,23 @@ export const mainListItems = (
         <LibraryBooksIcon />
       </ListItemIcon>
       <Link
-        className='forLink'
         to='/booklist'
         style={{ textDecoration: "none", color: "black" }}
       >
         <ListItemText primary='Books list' />
       </Link>
     </ListItem>
+      <ListItem button>
+          <ListItemIcon>
+              <LibraryBooksIcon />
+          </ListItemIcon>
+          <Link
+              to='/customerList'
+              style={{ textDecoration: "none", color: "black" }}
+          >
+              <ListItemText primary='Customer list' />
+          </Link>
+      </ListItem>
     <ListItem button>
       <ListItemIcon>
         <PersonIcon />
